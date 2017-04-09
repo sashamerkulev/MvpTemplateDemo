@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ru.merkulyevsasha.mvptemplatedemo.presentation.DemoActivity">
+    tools:context="ru.merkulyevsasha.mvptemplatedemo.presentation.Demo2Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -30,5 +30,6 @@
             android:layout_height="wrap_content"></RelativeLayout>
 
     </ScrollView>
+
 
 </android.support.design.widget.CoordinatorLayout>

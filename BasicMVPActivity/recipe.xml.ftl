@@ -1,11 +1,14 @@
 <?xml version="1.0"?>
 <recipe>
-    <#include "../common/recipe_manifest.xml.ftl" />
+    <#include "recipe_manifest.xml.ftl" />
 
-    <#include "../common/recipe_simple.xml.ftl" />
 
 <#if hasAppBar>
-    <#include "../common/recipe_app_bar.xml.ftl" />
+    <#include "recipe_app_bar.xml.ftl" />
+</#if>
+
+<#if (isNewProject!false) && !(excludeMenu!false)>
+    <#include "recipe_simple_menu.xml.ftl" />
 </#if>
 
     <instantiate from="root/src/app_package/presentation/SimpleActivity.java.ftl"
